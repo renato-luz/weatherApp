@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root{
+    --background : #343d4b;
+    --dark: #1f252d;
+    --lessDark: #222831;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.container{
+    width: 500px;
+    height: 700px; /* MUDAR AQUI */
+    background-color: #fff;
+    padding: 28px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5%;
+}
+.search-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box i{
+    font-size: 17px;
+    padding-right: 10px;
+}
+
+.search-box input{
+    border: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.search-box input:focus{
+    outline: none;
+}
+
+.search-box button{
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+}
+
+.search-box button:hover{
+    color: #fff;
+    background-color:  #343d4b;
+}
+
+
+.infos{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    gap: 5px;
+}
+
+.details i {
+    justify-self: end;
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.not-found img{
+    width: 100%;
+}
+
+.not-found p{
+    font-size: 24px;
+}
+
+.temperatura{
+    font-size: 34px;
+}
+
+.imgTemp{
+    width: 50%;
+}
+
+.minMax{
+    margin: 1rem;
+}
+
+.icon-message {
+    position: absolute;
+    background-color: #333;
+    left: 10px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.icon-message2 {
+    position: absolute;
+    left: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#location-icon1:hover + #icon-message1,
+#info-icon1:hover + #icon-message2 {
+    visibility: visible;
+    opacity: 1;
+}
