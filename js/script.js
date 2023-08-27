@@ -21,7 +21,6 @@ const getGeocoding = (cityName, APIkey) => {
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
-            // TODO fazer um if se o data.cod = 404
             if (data.cod == "404") {
                 // entra aqui se digitar uma cidade que nao existe
                 infos.classList.add("hidden");
@@ -83,4 +82,3 @@ searchInput.addEventListener("keydown", (event) => {
         getGeocoding(searchInput.value, APIkey);
     }
 });
-

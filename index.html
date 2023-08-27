@@ -21,25 +21,29 @@
         <button id="searchButton" class="fa-solid fa-magnifying-glass"></button>
       </div>
       <div class="infos hidden"> <!-- esconder com hidden -->
-        <img class="imgTemp" src="" alt="">
-        <p class="stateCountry"></p>
-        <p class="temperatura"></p>
-        <div class="minMax">
-          <span id="min"></span>
-          <span id="max"></span>
+        <div class="divInfos">
+          <div>
+            <i class="fa-solid fa-droplet" id="location-icon1"></i>
+            <p class="humidity"></p>
+          </div>
+          <div> 
+            <img class="imgTemp" src="" alt="">
+            <p class="tempAtual"></p>
+            <span class="min"></span>
+            <span class="max"></span>
+          </div>
+          <div>
+            <i class="fa-solid fa-wind" id="info-icon1"></i>
+            <p class="wind"></p>
+          </div>
         </div>
-        <div class="details">
-          <i class="fa-solid fa-droplet" id="location-icon1"></i>
-          <span class="icon-message" id="icon-message1">Humidity</span>
-          <p class="humidity"></p>
-          <i class="fa-solid fa-wind" id="info-icon1"></i>
-          <span class="icon-message2" id="icon-message2">Wind</span>
-          <p class="wind"></p>
+        <p class="stateCountry"></p>
+        <div class="divChart">
+          <canvas id="myChart"></canvas>
         </div>
       </div>
       <div class="not-found hidden">
         <img src="images/404.png" alt="">
-        <p>Não encontrado</p>
       </div>
     </div>
 
@@ -47,6 +51,8 @@
       src="https://kit.fontawesome.com/7c8801c017.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/script.js"></script>
+
+   <!-- <script src="js/script.js"></script> --> 
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>   <script src="js/scriptTeste.js"></script>
   </body>
 </html>
