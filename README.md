@@ -1,7 +1,7 @@
 
 # WeatherApp ☀️🌦️🌧️
 
-![WeatherApp](colocar a gif aqui)
+![WeatherApp](images/print.png)
 
 
 ## Introduction 💡
